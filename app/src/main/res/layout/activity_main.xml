@@ -32,6 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1.1"
+        android:background="@color/green"
         android:orientation="vertical">
 
         <LinearLayout
@@ -53,7 +54,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@android:color/transparent"
+                    android:background="@drawable/button_selector"
                     android:contentDescription="@string/facilities"
                     android:scaleType="fitCenter"
                     android:src="@drawable/img_btn_facilities" />
@@ -61,7 +62,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/facilities" />
+                    android:text="@string/facilities"
+                    android:textColor="@android:color/white" />
 
             </LinearLayout>
 
@@ -77,7 +79,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@android:color/transparent"
+                    android:background="@drawable/button_selector"
                     android:contentDescription="@string/events"
                     android:scaleType="fitCenter"
                     android:src="@drawable/img_btn_events" />
@@ -85,7 +87,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/events" />
+                    android:text="@string/events"
+                    android:textColor="@android:color/white" />
 
             </LinearLayout>
 
@@ -110,7 +113,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@android:color/transparent"
+                    android:background="@drawable/button_selector"
                     android:contentDescription="@string/clubs"
                     android:scaleType="fitCenter"
                     android:src="@drawable/img_btn_clubs" />
@@ -118,7 +121,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/clubs" />
+                    android:text="@string/clubs"
+                    android:textColor="@android:color/white" />
 
             </LinearLayout>
 
@@ -134,7 +138,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@android:color/transparent"
+                    android:background="@drawable/button_selector"
                     android:contentDescription="@string/support"
                     android:scaleType="fitCenter"
                     android:src="@drawable/img_btn_support" />
@@ -142,7 +146,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/support" />
+                    android:text="@string/support"
+                    android:textColor="@android:color/white" />
 
             </LinearLayout>
 
