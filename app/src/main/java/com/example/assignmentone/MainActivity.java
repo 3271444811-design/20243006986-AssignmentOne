@@ -1,5 +1,6 @@
 package com.example.assignmentone;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -7,6 +8,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+
+    public static final String EXTRA_TOPIC_INDEX = "topic_index";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
                 "Facilities clicked",
                 Toast.LENGTH_SHORT
         ).show();
+
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(EXTRA_TOPIC_INDEX, 0);
+        startActivity(intent);
     }
 
     public void onEventsClick(View view) {
@@ -28,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
                 "Events clicked",
                 Toast.LENGTH_SHORT
         ).show();
+
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(EXTRA_TOPIC_INDEX, 1);
+        startActivity(intent);
     }
 
     public void onClubsClick(View view) {
@@ -36,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
                 "Clubs clicked",
                 Toast.LENGTH_SHORT
         ).show();
+
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(EXTRA_TOPIC_INDEX, 2);
+        startActivity(intent);
     }
 
     public void onSupportClick(View view) {
@@ -44,5 +59,9 @@ public class MainActivity extends AppCompatActivity {
                 "Support clicked",
                 Toast.LENGTH_SHORT
         ).show();
+
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(EXTRA_TOPIC_INDEX, 3);
+        startActivity(intent);
     }
 }
